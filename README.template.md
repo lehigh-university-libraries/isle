@@ -1,4 +1,4 @@
-# SITE_NAME <!-- omit in toc -->
+# isle <!-- omit in toc -->
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
 
@@ -39,7 +39,7 @@
 
 # Introduction
 
-This is the development and production infrastructure for INSTITUTION's SITE_NAME.
+This is the development and production infrastructure for lehigh's isle.
 
 # Requirements
 
@@ -476,7 +476,7 @@ After=docker.service
 [Service]
 User=ubuntu
 Group=ubuntu
-WorkingDirectory=/opt/SITE_NAME
+WorkingDirectory=/opt/isle
 ExecStart=/usr/bin/docker compose --profile prod up
 ExecStop=/usr/bin/docker compose --profile prod down
 
